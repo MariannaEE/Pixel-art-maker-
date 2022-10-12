@@ -13,15 +13,15 @@ function makeGrid(x, y) {
   for(var a = 1 <= x; a++;) {
     $("pixelCanvas").append("<tr id=first" + a + "></tr>");
     for (var b = 1; b <=y; b++){
-      $("#first" + a).append("<td></td>");
+        $("#first" + a).append("<td></td>");
     }
   }
-  $("td").click(function colorin() {
+$("td").click(function colorin() {
     color = $("#colorPicker").val();
     if ($(this).attr("style")){
-      $(this).removeAttr("style")
+        $(this).removeAttr("style")
     } else {
-      $(this).attr("style", background-color + color)
+        $(this).attr("style", background-color + color)
     }
   })
 }
